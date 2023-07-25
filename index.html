@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    section {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    h1 {
+      font-size: 72px;
+      font-weight: 800;
+      color: white;
+      opacity: .8;
+    }
+    body {
+      background-size: cover;
+      background: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAKYA9wMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAEAAIDBQYBBwj/xABHEAABAwIEAwUFBAcFBgcAAAABAAIDBBEFEiExIkFRBhMyYXFCgZGh0RRSscEjYnKCkqLhBxckM8IVQ1NVY/AWRHOElNLx/8QAGwEAAwEBAQEBAAAAAAAAAAAAAgMEBQEABgf/xAApEQACAwACAgEEAQQDAAAAAAAAAQIDEQQSITETBSJBUfBhgZGxFDOh/9oADAMBAAIRAxEAPwDxOy7ZPponzysjjbmc42A6rZ472CqsLwj/AGiyoiljDQ5zRo4e7mmRrk1qKK6Zzi5RRibJwau2F9E9rUItEeUjUaFODfaA/aCmyLojvte/VEjuaQhuXiGrT8l0x34m7HkiWsF98rvkU9sVjp6lp/Io8C6gQaALt4mncdFx8PtM96se5D3ZmnI8crc/RNMOUXtkI6bFeaBcCtypZUe+BpsSMvmNioXwObqASPJBgtrAcNSyqUNXcq8CQ5UsqlsllXjxFlSyqXKEsq8eIcqRapgwnYaqVtMSOOw9UXVs9oHlPLdSNhyDM4myNZCGjhYPVyeISXEsBc77ztkcagHMBMY8bxp7I6pzYjrI7Q/h7kcIWsOnG/yUbo7nUAkbNGwR/HhzvoEWF3E4HKOXMrhYBxO35AItzbH7x+Q9EwxcyudDugwYuZUQWpjhZc6HdIS1cspCNbLSdjeyU/aaWUskZBDHbNI/b0AXo19ngFlsaoucniMtZJW3anB3YHislGX941vhktbMF1BKPV4w4TU4qUfTJux9O1+INlk1DTovV8SmFZg0lObFrmWXleAuNNbMCCtjT4jmhyl3JavC6KvGfafTKa/+OoyPNqyJ1NVSwu9lysOz+GT41XNpKW3eO5uNgpe08LftXetG+9lo/wCzdgppjUOAzuKgjRtzgYsOC3zJVr0iqx7s1X4HI1tdFlD/AAu5FVTWC69e7bRsxXBS0jii4mnoV5XDHd9iNR0XL6fjZ3kcR1489kbIsxta3n1Urad4Fg3MD7J5ei2OCdjKzFMOFbEwd2b26m3kgn4Y+B7mPGrTYpWNClV4M6IeTxqOTtCPQrojLRY8Q6PFj9CtRFhokaOG5PknSYHw3aHN8m7IkC6WZQwNbe12X3UToHNOjRfqzS/uWhnwiaPwgW/V0+WyBko5GewR+79Pou9dEShhSvj6g/BRugB2PwVrJF1vf4/RDOZ1QuJPJeQHubJd0iS3oFyw6LmAEAiHRSNjHQKQBSNZ5BMjHQJMjYwnYEfshTNg0vYDqTqVPHGTofloiY6VxIs0kdbfVUwrESmBCIbgFx6kpZC65zG3MN+qtRQSuHsgdTqpBht/Frbr9E1VMU7EUZZcWa246M2PqUjTOLbP0b0aNFf/AGEbbFMNLzN7IvgOfMigdABysFG6Neix9hqqTBziEjmRgx52sJ4nD0WGqYi0kBtrFBKuKXg9VyIzeEGGYXUYpXR0tK3NJJ4Qje1PZSr7ORwPqXMcJr+A3ynzWt/s5w9tO59dOAXnhZcbBWHb5ra/D3MPLUeqbHjtxM6z6rJcxVRX2nj8MT6idkMY4nkAL23spSRYLg0cDbBxF3O5krzLstRgVvfzAcGgW6qcUDIg242TOHxWodpe2B9ZlK/KYevyZX+0hgnnEwsXA2JSQvaGc1V8ovqupfJ48ZWaafCfxURh+i3wyggqYhcAEjQouXApGNvC6/ldU3ZisLoGAnVuhWvp6sFovaybR8dkE2j9S47jbTGcV7MXi2Fz2tI0myKwGX7NZu1lp69rJo3aC9llJozBPfbVDZSq5doi50qqfyxNe2q7+nyk7hZV+HZsRyMHC9yOoqgloF1e4Xh/fSCYjUJU2rUkctVd0PP4Nr2dcyloIoGABrW2WZ7S0IjxJ8sY4JTfbS6u6RkkTRom4hCZoxm1sp7IIyp0x7Noq8CwwVdXFG5lr725BaXF+z0NNB3kYu1RdnY2wkyEWctJUyNlp3MdY3BUuEFvaM0keeS4a150bubIXEOzk0LMz4iL9VqIaZorwHjgDrq7xRzamkMRNgenJNiibk2fGtZ4viGFPjBcW6cln6qnDHEEL2fHo6c4TJGIo8+ThNtV4/iDx3rkydeR0yONzo8ly6rMKl7By0TLKWQ3KjvqpihsfGy6PpacOda10LCVd4OwS1McfN7rKqiPZkl9nSLbDKXC3hgcYz8Fc4dgktU/uomFzrXtZbQwU78PETY2AhgsQNdE/s5C2mc+W1nbD0VrmoxeLyfOr6lGyRkazA5aKTu5m2da9rKXCMFFdWsh2HtG2wWtx9gqGNfYF7dAfJR4DCKdrpCOJy58r+PfyBLmJPCm7S9moaGnZLTEv1s+4281m8Kw4VeIMa8XjBu5ei4o4TUz2P1uFn8OpDTudkba53RUybh9zJ7Od4kkXdVP/hTH7OW1vJeRYzhobirmNHA919OS9Nm7wtIAWYxiiDCZJBxJtVcWsE8DkShY/PsbQTNpqdrG6WQeKTmoYWDW6CdOQcoKsMOazxu1J6q2KS9Fsq+kvkfsrMPwapcSWNygqzbgJy3nffyVsKlrW6EAjZBVmIWYbOC4t9IU+RdZLwUmK0lNSx2YBvqkqntBXjKSTzCSXO6MHjNmmmxwTbKPAKkwzZSdHrX01Tw7rAQPLHBzTYjZaejqg5jTfcLD4tzSw/RfpPKyPRmlFRdupVXiYDtQmsn03TJ5M7FZK3sjastUoYR0UtiBdbLs/VZXZCdDssJC7LIr/DakxuBvqNQpISyRl1y+5o9LpZ2kC6LJjeNgszRVQLWkO0OqtIqnzVMonraGnqDWOET7DQIr7TdtrqplmzajdRiqHVSThjJrK/2HSSgS5r6rs9eA21+SqZqodVWVddvxKimK/Jh/UIuaaJsZr7xOF+S8wxB96iS2xN1p8TrC5p4lkKl2aVxXeZJdEkZPDo+JshJ1XEklnFg+M2V72flDKtr+m11QNVjhsmSTdVcaWSRFyodoNHqlHXZ2ji5K1pagAaFYfDKzQC60FLVabrTnBM+Rt4vRvC8mlEjbFKKXILBVwqARuuOqLDdL6eMJ3BosHyd4bJ92tGllXRTWGYnVdfUabr3xkdibfgnqJg1ullkO0dVmkyB3hGqua2rDWFxOw1WKxGpMj3Ocb3JT4JQWmh9O42y1gT5f0m6tKapswahUD5P0ininIbYFdps/Z9BdTqLmWstfVVlXWcJ1Qs1QbHVVtTPcHVMsvUV4PUcWOgOLzmV+W+nNJBTOzvLkl87da5zcjchBRjhyPRWVDMWtyk7bKsaiInWIKTGWMv49rhIv4p7jdTd6MqqYZUUyS4VCmbceRqJgbPuj6WQtcDdVgdcoiF9ih7eRUbMmbHCasFhYTqNQrmKp0CxNDU91I13uWiinuArIT8GtTapw8l2KjzQ082U3GgQYqFHNNdpHkuSeirsaHVFVodSqmqqjrqV2oltcKrqZb3Q9sMHkpegesqL31VNIbuKMqHXKCdukWTcjNaSGpJJJIJ0ImnfYoUKaIpkHjE2LUaPD6i1tVe0tXtqVkaSW1lbU9RstiqeoxeTTrNQyrFt08VAcVRR1GiIbPlFk9IzLKvBdfaLBRy1Om6rDU6KGSouiSJlx/IsWrLRltzdyzNVLdE4hVd5Nfk3RVc71NfZ5w2+HQopETna3XRJoUO5ybn0Uytw0pV6Pll80BUyaFSyPQdQbuskXWtoZVXgOd/JdXHLqgKjjVM02UDSpGlcQaeMMidoio3ICIoprkSZXCx4GNcpWOQjHqZrl3RvcPgktZXNFU3iAv4VnWPRlNOWO8k2EsKab3Fmi+0Jrp1Xtm6FcMqd2KZ3aPqZLklVs8m6IlkuCgJylyZmXv8g8zroZ26meVC5LZBI4kkkhAEpGKMJ7EcQZBsDrI+GVVcZRUTldTLCG2OlvDLZTiZVzJLNT+8VsZ4iCdQcZtEPU1OWMm+6gMiCq5r8N9F6dmIGunWQyyXuhZXJ0j7oZ7lnTn5NSuGHHOUTnJOKic5IcihROSOQrzcqV7tFA4pMnoyKwadF1NJuklhDWlStKHbdSNK8mdCWFEsOiDafJTtJsvBxlgWxyma5CNJUzL9EQ1SCmO1U7HoRt72UzA5GtCUixjluAnGQoSPMFPTmmkk7uatjp3A2s+N5+YaQmayhT1YJzjzQ7znJDOI+WqvaagpHC0U+HVztw6KudDIPcQQrWOpxekYBE7EGjneGnq2/EZT8kahp34ey8sxIpal4uymmcOojcfyTm4TiUgvHh9U70ictlU9r8QpYnF7sPeW7d5SSwPJ9fCgh/aXiEen2emdz0qz9F51wXtkXJp6L7H5M+3s7jTvDhdUf3E/8A8MY9/wApqfgPqr8/2qVzf/IUx9aq/wDpXP71q3/ltJ/8k/Rc6V/sxZ28+LyNaf8AczzuzuNN8WF1I/dTf9i4qzxYdVe6In8Fo/71K47YdRD/ANyfol/ebiEujaXDW/tVLj+Fl1Rr/Yv5vqH5rX+TN/Ya2McdHUj1hd9E4XjcGyAtPRwstcztPjNeB9nqIzcaNw/CpJD/ABSkD5plQzF6ln+N+1mBw4hW10NM0jzYxhNv3k1NIJWWP/sSX9zK967ldSMmuN0fPR4XqZcZwqC2zKTvZviST8lVvdT58tPUsm82xvb8nAJqtRyMO78EzpbDdAyvuSpZM1tihXB3MJVljZTXVg17tFA5ye+/QqF+inb0oURjyonFOcVC4pTbCSGvKjcuu1UbroNCOEpLhukhOkzYyeSmbALbJRa80QzzTkke8jWU9+Y+aIZTDlY+hunwgaWF/cfojIyW7MBv1BRqKCUWQQ0oc4DKfgUbHQbXa75KWmDsxAYSeeVt7KxpwXWGr7dOXromKKHxqYLBht7WBPuVhBg8h3jIHVWlLG57mAZGs8tz8bLRUVCJwLiTMBfRtwfeCQu4iqPHeaZAYPbctWXxSgrYamVxp3iMuvoV7pSYbGWtDmhx/YNkTJgNNOCDE15I3LdEEsYMq4+tPm973NNpGOA8wlHVyRH9DLJGf1HFv4L2rF+xFBUA92zXfMBosBjfZVtMSYgS3qg6S/DPfBPNizK1GLVsrcklXK9g9lz7hBOqJDu/0VlUYUWG1kE6hIJ0S2pEVilv3A/evPtJd4/7yldRnUgbBN+yH3bLmSFPBgmePaT21Uw2kKcKM225qVmHk203RqE2c1fsmjxnEO5MRr6ju+TGyloHwUL6gPdmkJkd1ccxVhS4C6QtHXyWswXsTDUZS8F43c3QKiPHsa1k1l9UDCxmeU2iikcrjBMPrHVjXTwPDMpB4TovZ8G7F0lPDmZTtcOexIVwOz9L3V4og8eTCD815fHGXlindOS2MfB47JhjRrY/AoWXDtNGu+C9TrcHja1zo4nEDk1uoWZrKI53ExOyjmTZVxjGZOuS0/JhZaAD6ISSjFyFramC3hDrHo381XTQuBJLC0frH6LsqEPjyNRm30Z6Id9JbcLQOa0utlv+zr+CBniLtWh1r9CkTpSHK4p3QAKExXVnIwA23PkhjGRcAFTOCHKYC5oXVNI0c2G/kV1LcQ0xsYt/+qZp12QzPQfBSt9CfKwXEypIMjJ0GU+4IyEOIPK3UqraR0bfplRUJaN2NF/+mCmJjq4rS6poWEBxc2/nYlWNKwZxwuOu5AVJA0aWia4Hf9EDb5q0o2s0LIY3kczTiw+aNM0aa1L8GmomHhDo3AHUAtBLlpaFtmBz43NbbbJ/RZGhbG247uNz9wDSg/norqm7pmV0kcIedADRC1+g1TUtK51pR8I2FNfJxRljBtwW+OiKEokbbIRFuOC1/loFmIXh7bvgiY1t+EUI4vM8SeZxMCWxxGEG4IogM/8ANt+PohdXkzZU6y4q5xKzK2O8fXJbN/RYnH5WyudlZwN08JHuVhiFYLmJjIg9w1y0mw67rK4vMyNuVkbCRteCxPmdV3oki6mlRi9KKt8bjl28lWSkBp01KJrZA3QNb693uquZ/Fawt5MQaYvKSUhzzli/ad0Tf91b9YH5FRSuPCOg2y/98rLmYd1qfa+75LqZnNBTP8rzBHw1/ojYACAcp0PRVsThlcP1fu+/8kXSOadNP4FRW1pPPcNJho0ByGw8lv8AAszcj2RuNrEgNOq83wp7Lhpaw+sN1s8CljDzGWwi2oJo81x8VXZ5rMq2L7+T0mnkzRCWnzG4vbIbPH1Uj5TIC+LPnBs4GM79CLaLMwzMpjmc2IQvPFmodGO2Gmba/wA0ROy2aSGKB0mXwnD7B/rxb9CsWVf3GjC77MCq1plLnNjLZB4gY7/EW+azVdG8Odla9jz7Pdn6WVhUCCoZmEULXN0dlw0AtI5Hi+SpKprHC09NTxyHQBmHgXtzBzKzj6iG7GynrYnknMxzXHq3dVM1PabLNGGNtfMbC6sqyNgfrTxFvJxo239+qp6prWtJjhjfc3DnUzVob4AgDzw+J0fdWHIPv+Kq53ixsb66gHZFSkAgtGRx1LRCAh5qkSR5Khpc0agvaLXU88LK0wSQaXAd6A/1Qj2m+jHKWYxl3C2MD/09UJLl5MZ65FHPwVxGyX6W9ElBJbm4elklO2UIjYf2lPGddS5Dsd+qpQ959lySVRaCWuj3y3PqQpYtdcrv4z9UG09Y3XUzLf8ADemJj4y0tackEcL7DkJSPzVtSg2AZHONf+MR/qVDFltrE/rv/VWMMhLQY4pb+TjomJmnx5I0tNIGEAQ1Jefu1BH+pW9KXAB0kda54vr9qOg8uNZile1vE6CfUam5+qMjnE5GSGp7q1jZ7uLy1O34/jRFo0mk17/n+DRxyyVDRkZXmDUH/FO4/Lxbfj+PaiqMTcsba4POjGmqda/8eyqHVUUMBcWVjWtFzq/8ioWyi7pJYqzMfCMzuEdL3R9kL+Fbn8/0G1E5ia7N9sMm7nGY6n+JZiuqzJISO/yjRt3k/miMSqhkyMbUtcfvOeVSVMjBo1swtoPEkzkL5NsYR6oFq5bn/e+9yBkfcHR/xXZnguP+Z81C1wLx49780nT5y+esfM68h8fTVIO/Re34uvkoHOBN+P5pwc3uva8R69AupkmBUDznAvJa2ymp3n/qfFBRPFx4/mpGvGd3+Zv5psJehcomhopf0gP+I/i3WpoZXNDJY21hkbsO+IuLi4352+NlhaaZoIN6j+b/AL3stFh9Q37la7TlnV1clJYQX1vdRvqapjqIB+jxGRj27CqeAQfV6mhq3RuEFQzFHE37o/bngkdNHgXH5LI0VS2GUxOiryH8TNZB680dO5sreGmxAO9l+Z92nqLlDKiLInOUXnnP5/Uuqp8oeHQw4gC63eB1e6zx659FWzyR1MeZtNXO/brHXBHrJugYqxskbmS0laZ2WEgzutfy12KBqH5Hh0VFVNBPG0yeL+bdHGtRPLW8Y+qkc0O76GrIvYE1JPx41U1eZlwyOoZ6zmx/mT6iaCVmZlJUG/Un8yqqeTKSXwziPlrt5b7L0pYiiuv9/wA/9Gzubmytimv5zH/7IGR5HibIfWQ/VKZzDqyJ6De777JPe5STmXQiPlkjO2b4lDueDoM/xK451vC13vUbnOPID3qeUtHqI1/kHD95dUbr8wD6OSSWxqRG0nqpWa+0UkkCHRHhxva5UzCR7RSSRIdEmhcZHWL3aeQVhT5ho2V4t6JJJsUXcZBbZZC8xGaSwbc6BWEL3Na3JPKNPut+iSSdFGnx121v/Yu/mknyPnflbYjhbv5qSWedzNJne9oSSXWUVR3X/X9lRUSzOeS6S5GnhVdUSSG/EPgkklv0ZHJbSfkALnuHiHXZNBe3MSRt0SSSkYk2Mu4gHMNfJOJdkbtueXouJLyAOgu6j4KVzn96eL5LqSZH0AyeF7zpn/l/qrrDpalzA4T2B/VSSVVLek9yWFrK+pMJkFSc0IzN4BuAj4pqqSEPFU4AtvbI36JJK+Mdlhi3TajoJVvnieZhUyFwAaTkbq34clFO6Yt4qqXb7rfokkuOKTY2M3iZV1DpInEtnks8gG4Hogp3O3MsjvUBJJSTRoR9JgErnNOXO7L0UMhP3ikko5FESBzifacmG/3iupJbHIjffmbriSSUGj//2Q==);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <h1 id="demo">Havoc Tamilan</h1>
+
+    <audio control autoplay loop>
+        <source src="./Sollu.mp3" type="audio/mpeg">
+    </audio>
+  </section>
+
+  <script>
+    const changeText = () => {
+        setTimeout(() => {
+        document.body.style.backgroundImage = "linear-gradient(rgba(255, 0, 0, 0.8), rgba(255, 255, 0, 0.8))"
+        document.body.style.backgroundSize = "cover"
+        document.getElementById("demo").innerHTML = "Aarambikalama 💫"
+    }, 100)
+    setTimeout(() => {
+        document.body.style.backgroundImage = "linear-gradient(rgba(0, 255, 0, 0.8), rgba(0, 0, 255, 0.8))"
+        document.body.style.backgroundSize = "cover"
+        document.getElementById("demo").innerHTML = "Sollu Tamilan 🪐"
+    }, 400)
+    setTimeout(() => {
+        document.body.style.background = "linear-gradient(rgba(0, 0, 255, 0.8), rgba(128, 0, 128, 0.8))"
+        document.body.style.backgroundSize = "cover"
+        document.getElementById("demo").innerHTML = "Kelu Tamilan 💿"
+    }, 800)
+    setTimeout(() => {
+        document.body.style.background = "linear-gradient(rgba(0, 255, 255, 0.8), rgba(255, 0, 255, 0.8))"
+        document.body.style.backgroundSize = "cover"
+        document.getElementById("demo").innerHTML = "Rapper Tamilan ✨"
+    }, 1200)
+    setTimeout(() => {
+        document.body.style.background = "linear-gradient(rgba(255, 255, 0, 0.8), rgba(255, 165, 0, 0.8))"
+        document.body.style.backgroundSize = "cover"
+        document.getElementById("demo").innerHTML = "Karupu Tamilan 🎧"
+    }, 1600)
+    setTimeout(() => {
+        document.body.style.background = "linear-gradient(rgba(128, 0, 128, 0.8), rgba(255, 192, 203, 0.8))"
+        document.body.style.backgroundSize = "cover"
+        document.getElementById("demo").innerHTML = "Nerupu Tamilan 🎧"
+    }, 2000)
+    setTimeout(() => {
+        document.body.style.background = "linear-gradient(rgba(0, 128, 0, 0.8), rgba(0, 255, 0, 0.8))"
+        document.body.style.backgroundSize = "cover"
+        document.getElementById("demo").innerHTML = "Inipu Tamilan ❀"
+    }, 2400)
+    setTimeout(() => {
+        document.body.style.background = "linear-gradient(rgba(0, 128, 128, 0.8), rgba(0, 255, 255, 0.8))"
+        document.body.style.backgroundSize = "cover"
+        document.getElementById("demo").innerHTML = "Ullam Tamilan ♡"
+    }, 2800)
+    setTimeout(() => {
+        document.body.style.background = "linear-gradient(rgba(0, 0, 128, 0.8), rgba(75, 0, 130, 0.8))"
+        document.body.style.backgroundSize = "cover"
+        document.getElementById("demo").innerHTML = "Veliya Tamilan ♫"
+    }, 3200)
+    setTimeout(() => {
+        document.body.style.background = "linear-gradient(rgba(255, 165, 0, 0.8), rgba(255, 99, 71, 0.8))"
+        document.body.style.backgroundSize = "cover"
+        document.getElementById("demo").innerHTML = "Ratta Tamilan ❀"
+    }, 3600)
+    setTimeout(() => {
+        document.body.style.background = "linear-gradient(rgba(46, 139, 87, 0.8), rgba(34, 139, 34, 0.8))"
+        document.body.style.backgroundSize = "cover"
+        document.getElementById("demo").innerHTML = "Nanam Tamilan 💫"
+    }, 4000)
+    setTimeout(() => {
+        document.body.style.background = "linear-gradient(rgba(47, 79, 79, 0.8), rgba(112, 128, 144, 0.8))"
+        document.body.style.backgroundSize = "cover"
+        document.getElementById("demo").innerHTML = "Tamilan Tamilan 📺"
+    }, 4400)
+    setTimeout(() => {
+        document.body.style.background = "linear-gradient(rgba(218, 165, 32, 0.8), rgba(205, 133, 63, 0.8))"
+        document.body.style.backgroundSize = "cover"
+        document.getElementById("demo").innerHTML = "Puratchi Tamilan ★"
+    }, 4800)
+    setTimeout(() => {
+        document.body.style.background = "linear-gradient(rgba(85, 107, 47, 0.8), rgba(128, 128, 0, 0.8))"
+        document.body.style.backgroundSize = "cover"
+        document.getElementById("demo").innerHTML = "Kiruku Tamilan °‧"
+    }, 5200)
+    setTimeout(() => {
+        document.body.style.background = "linear-gradient(rgba(184, 134, 11, 0.8), rgba(139, 69, 19, 0.8))"
+        document.body.style.backgroundSize = "cover"
+        document.getElementById("demo").innerHTML = "Nalla Tamilan 🎞️"
+    }, 5600)
+    setTimeout(() => {
+        document.body.style.background = "linear-gradient(rgba(148, 0, 211, 0.8), rgba(102, 51, 153, 0.8))"
+        document.body.style.backgroundSize = "cover"
+        document.getElementById("demo").innerHTML = "Kette Tamilan 𖦹"
+    }, 6000)
+    setTimeout(() => {
+        document.body.style.background = "linear-gradient(rgba(0, 191, 255, 0.8), rgba(100, 149, 237, 0.8))"
+        document.body.style.backgroundSize = "cover"
+        document.getElementById("demo").innerHTML = "Uccha Tamilan ⋆｡"
+    }, 6400)
+    setTimeout(() => {
+        document.body.style.background = "linear-gradient(rgba(25, 25, 112, 0.8), rgba(123, 104, 238, 0.8))"
+        document.body.style.backgroundSize = "cover"
+        document.getElementById("demo").innerHTML = "Pacha Tamilan 🎥"
+    }, 6800)
+    setTimeout(() => {
+        document.body.style.background = "linear-gradient(rgba(178, 34, 34, 0.8), rgba(205, 92, 92, 0.8))"
+        document.body.style.backgroundSize = "cover"
+        document.getElementById("demo").innerHTML = "Veram Tamilan ☆"
+    }, 7200)
+    setTimeout(() => {
+        document.body.style.background = "linear-gradient(rgba(60, 179, 113, 0.8), rgba(0, 250, 154, 0.8))"
+        document.body.style.backgroundSize = "cover"
+        document.getElementById("demo").innerHTML = "Thimuru Tamilan 📀"
+    }, 7600)
+    setTimeout(() => {
+        document.body.style.background = "linear-gradient(rgba(0, 0, 205, 0.8), rgba(0, 206, 209, 0.8))"
+        document.body.style.backgroundSize = "cover"
+        document.getElementById("demo").innerHTML = "Uyiru Tamilan 🕸️"
+    }, 8000)
+    setTimeout(() => {
+        document.body.style.background = "linear-gradient(rgba(255, 69, 0, 0.8), rgba(255, 99, 71, 0.8))"
+        document.body.style.backgroundSize = "cover"
+        document.getElementById("demo").innerHTML = "Aathi Tamilan 🖧"
+    }, 8400)
+    setTimeout(() => {
+        document.body.style.background = "linear-gradient(rgba(75, 0, 130, 0.8), rgba(72, 61, 139, 0.8))"
+        document.body.style.backgroundSize = "cover"
+        document.getElementById("demo").innerHTML = "Tamilan Tamilan 😂"
+    }, 8800)
+    setTimeout(() => {
+        document.body.style.background = "linear-gradient(rgba(255, 0, 5, 0.3), rgb(3, 255, 40)),url('./img.jpg')"
+        document.body.style.backgroundSize = "cover"
+        document.getElementById("demo").innerHTML = "Havoc Tamilan ✌"
+    }, 9200)
+    }
+
+    setInterval(changeText, 9200);
+    const bgAudio = document.getElementById("bgAudio");
+function playAudio() {
+    bgAudio.play();
+}
+function pauseAudio() {
+    bgAudio.pause();
+}
+function stopAudio() {
+    bgAudio.pause();
+    bgAudio.currentTime = 0;
+}
+  </script>
+</body>
+</html>
+celebrate diwali eXile rama
+when where who how 
+who rama
+where eXile
+when diwali
+how celebrate
